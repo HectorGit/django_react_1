@@ -48,6 +48,17 @@ class Notes(models.Model):
 # timestamp timestamp
 # movements int4
 
+# user_devices (Primary Key (compound) : user_id + peripheral_name)
+# user_id int4 
+# device_name varchar
+# peripheral_name varchar
+# peripheral_uuid varchar
+# last_date timestamp
+# is_autoconnection bool
+# last_connected_device varchar
+# desk_firmware_vesrion varchar
+# last_connected_device_version varchar
+
 #------------------------------------------------------
 
 # Models that would be ---NICE TO HAVE--- to define :
@@ -59,16 +70,16 @@ class Notes(models.Model):
 # preset_height int4
 
 # desk_routines (Primary Key : id)
-#routine_id int4
-#routine_name varchar
-#active_min int4
-#rest_min int4
-#active_height int4
-#rest_height int4
-#is_favourite bool
-#is_auto bool
-#auto_endtime timestamp
-#user_id int4
+# routine_id int4
+# routine_name varchar
+# active_min int4
+# rest_min int4
+# active_height int4
+# rest_height int4
+# is_favourite bool
+# is_auto bool
+# auto_endtime timestamp
+# user_id int4
 
 # challenges (Primary Key : id )
 # challenge_id int4
@@ -87,7 +98,7 @@ class Notes(models.Model):
 # units varchar
 # recurrence varchar
 
-#user_challenges (Primary Key : id)
+# user_challenges (Primary Key : id)
 # challenge_id int4
 # user_id int4 
 # completed_date timestamp
