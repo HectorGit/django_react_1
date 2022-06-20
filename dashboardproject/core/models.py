@@ -59,6 +59,34 @@ class Notes(models.Model):
 # desk_firmware_vesrion varchar
 # last_connected_device_version varchar
 
+# user settings (Primary Key : id)
+# photo_url varchar
+# about_me varchar
+# last_seen timestamp
+# height float4
+# weight float4
+# dob timestamp
+# init_deskheight varchar
+# sitting_preset float4
+# biking_preset float4
+# standing_preset float4
+# is_metric bool
+# is_birthday bool
+# name varchar
+# gender varchar
+# notifications int4
+# privacy int4
+# vibration bool
+# accelerometer bool
+
+# user_table (Primary Key : id)
+# username varchar
+# email varchar
+# password_hash varchar
+# role varchar
+# user_created timestamp
+# shipping_id varchar
+
 #------------------------------------------------------
 
 # Models that would be ---NICE TO HAVE--- to define :
