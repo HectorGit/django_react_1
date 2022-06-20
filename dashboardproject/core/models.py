@@ -22,11 +22,53 @@ class Notes(models.Model):
 # power float4
 # timestamp timestamp
 
+# monthly_bike_data (Primary Key : id )
+# user_id int4
+# time_bike int4
+# distance float4
+# calories float4
+# power float4
+# timestamp timestamp
 
+# desk_user_data (Primary Key (compound) : user_id + hour + date)
+# user_id int4 
+# hour int4
+# date date 
+# time_active int4
+# time_total int4
+# calories float4
+# timestamp timestamp
+# movements int4
+
+# monthly_desk_data (Primary Key : id)
+# user_id int4
+# time_active int4
+# time_total float4
+# calories float4
+# timestamp timestamp
+# movements int4
 
 #------------------------------------------------------
 
 # Models that would be ---NICE TO HAVE--- to define :
+
+# desk_presets (Primary Key : id)
+# user_id int4
+# preset_id int4
+# preset_name varchar
+# preset_height int4
+
+# desk_routines (Primary Key : id)
+#routine_id int4
+#routine_name varchar
+#active_min int4
+#rest_min int4
+#active_height int4
+#rest_height int4
+#is_favourite bool
+#is_auto bool
+#auto_endtime timestamp
+#user_id int4
 
 # challenges (Primary Key : id )
 # challenge_id int4
@@ -44,3 +86,14 @@ class Notes(models.Model):
 # amount int4
 # units varchar
 # recurrence varchar
+
+#user_challenges (Primary Key : id)
+# challenge_id int4
+# user_id int4 
+# completed_date timestamp
+# task_id int4
+# is_favourite bool
+
+#------------------------------------------------------
+
+# Models that would be ---NICE TO AUGMENT--- :
