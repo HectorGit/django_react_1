@@ -11,7 +11,7 @@ class Notes(models.Model):
 
 # Possible models we will ---NEED--- to define : 
 
-# bike_user_data 
+# bike_user_data (Primary Key (compound) : user_id + hour + date)
 # automatic column (id)
 # user_id int4 
 # hour int4
@@ -22,8 +22,25 @@ class Notes(models.Model):
 # power float4
 # timestamp timestamp
 
-# Primary Key : user_id + hour + date
+
 
 #------------------------------------------------------
 
 # Models that would be ---NICE TO HAVE--- to define :
+
+# challenges (Primary Key : id )
+# challenge_id int4
+# challenge_name varchar
+# task_id int4
+# task_name varchar
+# task varchar
+# completion_condition varchar
+
+# custom_challenge (Primary Key : id)
+# user_id int4
+# custom_title varchar 
+# custom_des varchar
+# position varchar
+# amount int4
+# units varchar
+# recurrence varchar
